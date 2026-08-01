@@ -1,0 +1,496 @@
+{
+  "summary": {
+    "recall@5": 0.933,
+    "precision@5": 0.32,
+    "mrr": 0.772,
+    "n_questions": 30,
+    "settings": {
+      "chunk_size": 2400,
+      "chunk_overlap": 400,
+      "k": 5
+    }
+  },
+  "detail": [
+    {
+      "id": "q-h01",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "pol-002"
+      ],
+      "got": [
+        "pol-002",
+        "pol-001",
+        "pol-001",
+        "pol-002",
+        "run-006"
+      ]
+    },
+    {
+      "id": "q-h02",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "wiki-012"
+      ],
+      "got": [
+        "wiki-012",
+        "wiki-012",
+        "run-005",
+        "run-004",
+        "run-004"
+      ]
+    },
+    {
+      "id": "q-h04",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-008"
+      ],
+      "got": [
+        "run-008",
+        "run-008",
+        "run-005",
+        "run-004",
+        "pol-005"
+      ]
+    },
+    {
+      "id": "q-h06",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 0.25,
+      "expected": [
+        "wiki-004"
+      ],
+      "got": [
+        "pol-007",
+        "run-003",
+        "run-006",
+        "wiki-004",
+        "run-003"
+      ]
+    },
+    {
+      "id": "q-h08",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-006"
+      ],
+      "got": [
+        "run-006",
+        "run-006",
+        "wiki-009",
+        "wiki-012",
+        "run-005"
+      ]
+    },
+    {
+      "id": "q-h19",
+      "recall": 1.0,
+      "precision": 0.8,
+      "rr": 1.0,
+      "expected": [
+        "wiki-005",
+        "run-004"
+      ],
+      "got": [
+        "run-004",
+        "run-004",
+        "wiki-005",
+        "wiki-005",
+        "pol-007"
+      ]
+    },
+    {
+      "id": "q-g02",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "pol-003"
+      ],
+      "got": [
+        "pol-003",
+        "pol-003",
+        "wiki-005",
+        "run-006",
+        "run-002"
+      ]
+    },
+    {
+      "id": "q-g03",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "pol-004"
+      ],
+      "got": [
+        "pol-004",
+        "pol-004",
+        "run-006",
+        "run-006",
+        "wiki-012"
+      ]
+    },
+    {
+      "id": "q-g04",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 0.5,
+      "expected": [
+        "pol-005"
+      ],
+      "got": [
+        "pol-007",
+        "pol-005",
+        "pol-005",
+        "run-005",
+        "wiki-010"
+      ]
+    },
+    {
+      "id": "q-g05",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "pol-006"
+      ],
+      "got": [
+        "pol-006",
+        "run-005",
+        "wiki-012",
+        "run-006",
+        "pol-006"
+      ]
+    },
+    {
+      "id": "q-g06",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "pol-007"
+      ],
+      "got": [
+        "pol-007",
+        "wiki-001",
+        "run-001",
+        "pol-006",
+        "wiki-001"
+      ]
+    },
+    {
+      "id": "q-g07",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "pol-008"
+      ],
+      "got": [
+        "pol-008",
+        "wiki-012",
+        "pol-001",
+        "pol-008",
+        "wiki-008"
+      ]
+    },
+    {
+      "id": "q-g08",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "run-001"
+      ],
+      "got": [
+        "run-001",
+        "wiki-002",
+        "wiki-002",
+        "wiki-001",
+        "run-002"
+      ]
+    },
+    {
+      "id": "q-g09",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-002"
+      ],
+      "got": [
+        "run-002",
+        "run-002",
+        "wiki-002",
+        "wiki-001",
+        "run-001"
+      ]
+    },
+    {
+      "id": "q-g10",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-003"
+      ],
+      "got": [
+        "run-003",
+        "run-006",
+        "run-004",
+        "run-003",
+        "wiki-009"
+      ]
+    },
+    {
+      "id": "q-g11",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-004"
+      ],
+      "got": [
+        "run-004",
+        "wiki-005",
+        "wiki-012",
+        "run-004",
+        "wiki-012"
+      ]
+    },
+    {
+      "id": "q-g12",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 0.3333333333333333,
+      "expected": [
+        "run-005"
+      ],
+      "got": [
+        "run-006",
+        "run-006",
+        "run-005",
+        "pol-007",
+        "run-005"
+      ]
+    },
+    {
+      "id": "q-g13",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 1.0,
+      "expected": [
+        "run-006"
+      ],
+      "got": [
+        "run-006",
+        "run-006",
+        "wiki-009",
+        "pol-008",
+        "run-005"
+      ]
+    },
+    {
+      "id": "q-g14",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "run-007"
+      ],
+      "got": [
+        "run-007",
+        "wiki-011",
+        "run-006",
+        "wiki-002",
+        "run-006"
+      ]
+    },
+    {
+      "id": "q-g16",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "wiki-001"
+      ],
+      "got": [
+        "wiki-001",
+        "wiki-003",
+        "pol-001",
+        "wiki-002",
+        "run-001"
+      ]
+    },
+    {
+      "id": "q-g17",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 0.25,
+      "expected": [
+        "wiki-002"
+      ],
+      "got": [
+        "wiki-001",
+        "run-001",
+        "run-002",
+        "wiki-002",
+        "wiki-002"
+      ]
+    },
+    {
+      "id": "q-g18",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "wiki-003"
+      ],
+      "got": [
+        "wiki-003",
+        "run-001",
+        "run-006",
+        "run-001",
+        "run-004"
+      ]
+    },
+    {
+      "id": "q-g19",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 0.5,
+      "expected": [
+        "wiki-004"
+      ],
+      "got": [
+        "wiki-009",
+        "wiki-004",
+        "run-006",
+        "run-003",
+        "wiki-007"
+      ]
+    },
+    {
+      "id": "q-g20",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 0.3333333333333333,
+      "expected": [
+        "wiki-005"
+      ],
+      "got": [
+        "run-004",
+        "run-004",
+        "wiki-005",
+        "wiki-005",
+        "wiki-012"
+      ]
+    },
+    {
+      "id": "q-g21",
+      "recall": 0.0,
+      "precision": 0.0,
+      "rr": 0.0,
+      "expected": [
+        "wiki-006"
+      ],
+      "got": [
+        "wiki-001",
+        "run-001",
+        "wiki-003",
+        "wiki-001",
+        "wiki-002"
+      ]
+    },
+    {
+      "id": "q-g22",
+      "recall": 1.0,
+      "precision": 0.4,
+      "rr": 0.5,
+      "expected": [
+        "wiki-007"
+      ],
+      "got": [
+        "run-006",
+        "wiki-007",
+        "run-007",
+        "wiki-007",
+        "run-006"
+      ]
+    },
+    {
+      "id": "q-g23",
+      "recall": 0.0,
+      "precision": 0.0,
+      "rr": 0.0,
+      "expected": [
+        "wiki-008"
+      ],
+      "got": [
+        "wiki-005",
+        "pol-001",
+        "wiki-005",
+        "run-004",
+        "wiki-012"
+      ]
+    },
+    {
+      "id": "q-g24",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 0.5,
+      "expected": [
+        "wiki-009"
+      ],
+      "got": [
+        "run-006",
+        "wiki-009",
+        "run-006",
+        "run-005",
+        "wiki-012"
+      ]
+    },
+    {
+      "id": "q-g25",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "wiki-010"
+      ],
+      "got": [
+        "wiki-010",
+        "run-006",
+        "wiki-001",
+        "run-006",
+        "wiki-007"
+      ]
+    },
+    {
+      "id": "q-g26",
+      "recall": 1.0,
+      "precision": 0.2,
+      "rr": 1.0,
+      "expected": [
+        "wiki-011"
+      ],
+      "got": [
+        "wiki-011",
+        "run-006",
+        "pol-007",
+        "run-007",
+        "wiki-007"
+      ]
+    }
+  ]
+}

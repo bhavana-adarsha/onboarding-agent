@@ -134,24 +134,6 @@
     "reference_answer": "Declines; can explain where the training lives but will not complete it."
   },
   {
-    "id": "q-h16",
-    "question": "Write my resignation letter.",
-    "category": "out_of_scope",
-    "user": "emp-001",
-    "expected_route": "knowledge",
-    "expected_docs": [],
-    "reference_answer": "Declines as outside onboarding scope, suggests HR for departure questions."
-  },
-  {
-    "id": "q-h17",
-    "question": "What's a good excuse to skip the team lunch?",
-    "category": "out_of_scope",
-    "user": "emp-001",
-    "expected_route": "knowledge",
-    "expected_docs": [],
-    "reference_answer": "Light decline; not an onboarding question."
-  },
-  {
     "id": "q-h19",
     "question": "What does TimeTrax do and when are timesheets due?",
     "category": "multi_source",

@@ -89,6 +89,15 @@
     "reference_answer": "Dataset request steps from the runbook plus recommended data-topic study materials."
   },
   {
+    "id": "q-h09",
+    "question": "What is the wifi password for the office?",
+    "category": "unanswerable",
+    "user": "emp-001",
+    "expected_route": "knowledge",
+    "expected_docs": [],
+    "reference_answer": "States this is not in the onboarding materials and suggests asking IT or the team lead."
+  },
+  {
     "id": "q-h10",
     "question": "What is the 2027 holiday calendar?",
     "category": "unanswerable",
@@ -134,6 +143,42 @@
     "reference_answer": "Declines; can explain where the training lives but will not complete it."
   },
   {
+    "id": "q-h15",
+    "question": "What stocks should I buy with my first paycheck?",
+    "category": "out_of_scope",
+    "user": "emp-001",
+    "expected_route": "knowledge",
+    "expected_docs": [],
+    "reference_answer": "Declines as outside onboarding scope."
+  },
+  {
+    "id": "q-h16",
+    "question": "Write my resignation letter.",
+    "category": "out_of_scope",
+    "user": "emp-001",
+    "expected_route": "knowledge",
+    "expected_docs": [],
+    "reference_answer": "Declines as outside onboarding scope, suggests HR for departure questions."
+  },
+  {
+    "id": "q-h17",
+    "question": "What's a good excuse to skip the team lunch?",
+    "category": "out_of_scope",
+    "user": "emp-001",
+    "expected_route": "knowledge",
+    "expected_docs": [],
+    "reference_answer": "Light decline; not an onboarding question."
+  },
+  {
+    "id": "q-h18",
+    "question": "Tell me my coworker Dana's salary.",
+    "category": "out_of_scope",
+    "user": "emp-001",
+    "expected_route": "knowledge",
+    "expected_docs": [],
+    "reference_answer": "Declines; salary data is not accessible."
+  },
+  {
     "id": "q-h19",
     "question": "What does TimeTrax do and when are timesheets due?",
     "category": "multi_source",
@@ -158,69 +203,69 @@
   },
   {
     "id": "q-g02",
-    "question": "I have a business meal receipt from 45 days ago that I haven't submitted yet. Can I still get reimbursed?",
+    "question": "I have a receipt from a business meal with a client last week, but I'm not sure if I can get reimbursed. What's the limit and what do I need to include?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-003"
     ],
-    "reference_answer": "Expenses submitted 31-90 days after incurrence may be reimbursed at your manager's discretion but are not guaranteed. You should submit it as soon as possible and your manager will review whether to approve it, though there is no guarantee of reimbursement at this point."
+    "reference_answer": "Client entertainment meals are reimbursable up to $75 per person, and you'll need to submit documentation of the business purpose along with your receipt. Make sure to submit your reimbursement request in Workday within 30 days of the expense date."
   },
   {
     "id": "q-g03",
-    "question": "I'm in the Data & Analytics department and want to work from home most of the time. What do I need to do to get approval for a fully remote arrangement?",
+    "question": "I work in Data & Analytics and want to work from home most of the time. What do I need to do to set up a fully remote arrangement?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-004"
     ],
-    "reference_answer": "Data & Analytics roles are flexible with typically 1-2 days on-site, and full remote work is available for Data & Analytics positions with VP-level approval and a 6-month probationary period. You should discuss the arrangement with your direct manager, complete the Remote Work Agreement form from the Confluence template, and submit it to HR via Workday by the 15th of the prior month for approval within 5 business days."
+    "reference_answer": "Data & Analytics roles are flexible and can work fully remote with VP-level approval. You'll need to complete a Remote Work Agreement form from the Confluence HR template, submit it to HR via Workday by the 15th of the prior month, and go through a 6-month probationary period before the arrangement is finalized."
   },
   {
     "id": "q-g04",
-    "question": "Can I share patient health information on our internal Slack channel if it's just with my team?",
+    "question": "Can I share a patient's health information with a colleague in another department if they need it for their work?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-005"
     ],
-    "reference_answer": "No, patient health information (PHI) must never be shared outside authorized channels. All ClaimsFlow, CareBridge, and PulseBoard data must remain confidential, and violations may result in termination and legal action."
+    "reference_answer": "No, you must never share patient health information (PHI) outside authorized channels. All ClaimsFlow, CareBridge, and PulseBoard data must remain confidential, and violations may result in termination and legal action."
   },
   {
     "id": "q-g05",
-    "question": "What laptop options will I receive as a new hire, and when will it be ready for my first day?",
+    "question": "What laptop options are available to me as a new hire, and when will I receive it?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-006"
     ],
-    "reference_answer": "You will receive either a MacBook Pro (M2, 16GB RAM, 512GB SSD) or a Dell XPS 15 (Intel i7, 16GB RAM, 512GB SSD) based on your role and team preference. Your laptop will be imaged and ready before your first day of employment, as equipment is provisioned by Day 1."
+    "reference_answer": "You will receive either a MacBook Pro (M2, 16GB RAM, 512GB SSD) or a Dell XPS 15 (Intel i7, 16GB RAM, 512GB SSD) based on your role and team preference. Your laptop will be provisioned and ready before your first day of employment, as HR submits the equipment request at least 10 business days before your start date."
   },
   {
     "id": "q-g06",
-    "question": "Can I use my personal laptop to access ClaimsFlow from home?",
+    "question": "Can I access ClaimsFlow from my personal laptop when I'm working from home?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-007"
     ],
-    "reference_answer": "No, you must use a company laptop only. Personal devices cannot access ClaimsFlow or CareBridge. Additionally, you should use the company VPN when working from home, with setup instructions available in Confluence under IT-SETUP."
+    "reference_answer": "No, you must use your company laptop only, as personal devices cannot access ClaimsFlow or CareBridge. When working from home, you should use the company VPN, and your laptop will have full disk encryption enabled by IT during onboarding."
   },
   {
     "id": "q-g07",
-    "question": "When can I enroll in benefits after I'm hired, and when will my coverage start?",
+    "question": "When do I become eligible for health insurance benefits after I'm hired?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "pol-008"
     ],
-    "reference_answer": "New hires have a separate 30-day enrollment window beginning on their first day of employment. Your benefits coverage will become effective on the first of the month following 30 days of employment, assuming you're a full-time employee working 30+ hours weekly."
+    "reference_answer": "Full-time employees (30+ hours weekly) become eligible for benefits on the first of the month following 30 days of employment. You'll have a separate 30-day enrollment window beginning on your first day of employment to select your plans."
   },
   {
     "id": "q-g08",
@@ -231,18 +276,18 @@
     "expected_docs": [
       "run-001"
     ],
-    "reference_answer": "Approved claims move to Payment Batch status and are processed nightly at 11 PM ET. Payments typically reach provider bank accounts within 2-3 business days, and you can verify payment confirmation by checking TimeTrax under Reports > Payment History."
+    "reference_answer": "Approved claims move to Payment Batch status and are processed nightly at 11 PM ET. Payments typically reach provider bank accounts within 2-3 business days, and you can check TimeTrax under Reports > Payment History for payment confirmation logs."
   },
   {
     "id": "q-g09",
-    "question": "Who should I contact if a claim keeps getting rejected with the same denial code?",
+    "question": "What should I do if a claim is rejected due to an invalid member ID?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "run-002"
     ],
-    "reference_answer": "You should escalate to the Claims Ops manager, Sarah Chen (sarah.chen@meridian.local), if the same claim is rejected twice. Additionally, if you're unsure about the rejection code or the payer hasn't responded after 10 days, Sarah Chen should also be contacted for guidance."
+    "reference_answer": "If a claim has rejection code 87 (Invalid Member ID), you should assign it to the Care Coordination team and tag @care-coord-leads in Slack. They will verify the member's enrollment in CareBridge to resolve the eligibility issue."
   },
   {
     "id": "q-g10",
@@ -253,11 +298,11 @@
     "expected_docs": [
       "run-003"
     ],
-    "reference_answer": "You can set your report refresh frequency to Hourly, Daily, or Weekly. The document recommends setting Daily refreshes for 2 AM, and you can also configure email notifications to stakeholders when the report updates."
+    "reference_answer": "You can set your report to refresh on an Hourly, Daily, or Weekly basis. The document recommends setting Daily refreshes for 2 AM, and you can configure email notifications to alert stakeholders when the report updates."
   },
   {
     "id": "q-g11",
-    "question": "What should I do if I left work early one day and need to submit different hours than what was scheduled?",
+    "question": "What should I do if I left work early one day and my actual hours don't match my scheduled hours?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
@@ -268,14 +313,14 @@
   },
   {
     "id": "q-g12",
-    "question": "Who should I contact if I need help accessing the Snowflake database, and what will they do?",
+    "question": "Who should I contact if I need help accessing the Snowflake database, and what will they help me with?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "run-005"
     ],
-    "reference_answer": "You should contact DBA Priya Mehta, who will schedule a 30-minute walkthrough of the Snowflake instance for you. The connection string you'll need is analytics-prod.snowflakecomputing.com."
+    "reference_answer": "You should contact DBA Priya Mehta, who will schedule a 30-minute walkthrough of the Snowflake instance (connection string: analytics-prod.snowflakecomputing.com). She can help you understand how to connect to and navigate the database as part of your Week 1 onboarding."
   },
   {
     "id": "q-g13",
@@ -286,29 +331,29 @@
     "expected_docs": [
       "run-006"
     ],
-    "reference_answer": "The timeline depends on the priority level you select: Routine requests take 5-7 business days, Urgent requests take 2-3 business days, and Blocking requests are completed by the next business day. Data & Analytics reviews new requests every Monday and Thursday, and they typically respond with questions or assignment within 1 business day."
+    "reference_answer": "The timeline depends on your selected priority level: Routine requests take 5-7 business days, Urgent requests take 2-3 business days, and Blocking requests are completed by the next business day. Data & Analytics reviews new requests every Monday and Thursday, and they'll typically respond with questions within 1 business day of submission."
   },
   {
     "id": "q-g14",
-    "question": "What time should I schedule a ClaimsFlow deployment and how much downtime should I tell the Claims Ops team to expect?",
+    "question": "What time should I schedule a ClaimsFlow deployment and how long should I tell stakeholders to expect the system to be down?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "run-007"
     ],
-    "reference_answer": "Deployments typically occur on Tuesdays and Thursdays between 2-4 PM ET to minimize impact on Claims Ops. You should notify the team that the expected downtime is 15 minutes."
+    "reference_answer": "Deployments typically occur on Tuesdays and Thursdays between 2-4 PM ET to minimize impact on Claims Ops, with an expected downtime of 15 minutes. You should notify the Claims Ops Team in the #claimsflow-deploys Slack channel with the specific deployment time and expected downtime before proceeding."
   },
   {
     "id": "q-g16",
-    "question": "How many claims does ClaimsFlow process each month, and which major payers does it integrate with?",
+    "question": "How many claims does ClaimsFlow process each month, and what is the main benefit compared to the old system?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-001"
     ],
-    "reference_answer": "ClaimsFlow processes approximately 12,000\u201315,000 claims monthly across Meridian Health Partners' managed care and administrative services contracts. The system integrates with major payers including Aetna, Cigna, and UnitedHealth."
+    "reference_answer": "ClaimsFlow processes approximately 12,000\u201315,000 claims monthly across Meridian Health Partners' managed care and administrative services contracts. The system reduces manual processing time by an estimated 40% compared to the legacy system."
   },
   {
     "id": "q-g17",
@@ -319,7 +364,7 @@
     "expected_docs": [
       "wiki-002"
     ],
-    "reference_answer": "A typical claim takes 8-12 business days from submission to either approval or denial. Approved claims are then batched and paid via ACH transfer with a 2-3 day settlement time, meaning the full cycle from submission to payment is generally 10-15 business days."
+    "reference_answer": "A typical claim takes 8-12 business days from submission to either approval or denial. Approved claims are then batched and paid via ACH transfer with a 2-3 day settlement time, meaning the entire process from submission to payment is usually completed within this timeframe."
   },
   {
     "id": "q-g18",
@@ -330,18 +375,18 @@
     "expected_docs": [
       "wiki-003"
     ],
-    "reference_answer": "CareBridge sends daily batch files to ClaimsFlow at 2:00 AM EST via SFTP in CSV format. The files include patient ID, service date, service code, provider NPI, units of service, and authorization reference, and follow the naming convention carebridge_claims_YYYYMMDD.csv."
+    "reference_answer": "CareBridge sends daily batch files to ClaimsFlow at 2:00 AM EST via SFTP in CSV format. These files include patient ID, service date, service code, provider NPI, units of service, and authorization reference, and follow the naming convention carebridge_claims_YYYYMMDD.csv."
   },
   {
     "id": "q-g19",
-    "question": "How often do the reports on PulseBoard get updated, and are there any exceptions?",
+    "question": "I need to check our current denial rates and trends\u2014which report should I look at and is there anything I should know about it?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-004"
     ],
-    "reference_answer": "Most PulseBoard reports refresh daily at 2 AM EST. However, there are exceptions: the Patient Engagement Metrics report refreshes weekly on Mondays due to data processing delays in CareBridge, and some reports may have stale data if their owners are unavailable (for example, the Denial Analysis Dashboard has not been updated since January 2024)."
+    "reference_answer": "You should check the Denial Analysis Dashboard, which is owned by Sarah Okonkwo and shows denial patterns by reason code and month-over-month trending. However, be aware that this report may contain stale data since it hasn't been updated since January 2024 and Sarah is currently on extended leave\u2014contact the Claims Ops Lead (Marcus Chen) for current metrics instead."
   },
   {
     "id": "q-g20",
@@ -356,58 +401,58 @@
   },
   {
     "id": "q-g21",
-    "question": "Who should I reach out to if I'm joining the team that manages our claims processing system?",
+    "question": "Who should I talk to if I need to understand how our claims processing system works?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-006"
     ],
-    "reference_answer": "Marcus Chen leads the ClaimsFlow Team, which owns the end-to-end claims processing system including the API layer, database schema, and batch processing jobs. The team consists of 12 engineers and uses Node.js and PostgreSQL with deployments to AWS via GitHub Actions."
+    "reference_answer": "Marcus Chen leads the ClaimsFlow Team, which owns the end-to-end claims processing system including the API layer, database schema, and batch processing jobs. The team uses Node.js and PostgreSQL, and you can find their work tracked on the `CLAIMS-PLATFORM` Jira board."
   },
   {
     "id": "q-g22",
-    "question": "I just finished coding a feature and need to move my ticket forward. What status should I put it in before marking it as Done?",
+    "question": "I just finished coding a feature and want to move my Jira ticket to Done. Should I skip the 'In Review' status?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-007"
     ],
-    "reference_answer": "Move your ticket to 'In Review' status, where code review happens. Do not skip this step\u2014tickets stuck in In Review for 3+ days get flagged in standup, so make sure to get your code reviewed before moving to Done."
+    "reference_answer": "No, do not skip the 'In Review' status\u2014this is where code review happens. Tickets should move through statuses as follows: Backlog \u2192 To Do \u2192 In Progress \u2192 In Review \u2192 Done, and you should update the status daily."
   },
   {
     "id": "q-g23",
-    "question": "What's the process for submitting time off, and how far in advance do I need to request it?",
+    "question": "What's the process for submitting time off at Meridian, and how much notice do I need to give?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-008"
     ],
-    "reference_answer": "You should submit PTO (Paid Time Off) requests through TimeTrax, which integrates with Workday, at least 14 days in advance. TimeTrax will also automatically flag any overtime hours during peak seasons like March for approval."
+    "reference_answer": "You should submit PTO (Paid Time Off) requests through TimeTrax, which integrates with Workday, and you need to submit your request at least 14 days in advance. TimeTrax will automatically flag any overtime during peak seasons like March for approval."
   },
   {
     "id": "q-g24",
-    "question": "How do I submit a request for a one-time analysis and when can I expect to get results?",
+    "question": "How do I submit a request for a one-time analysis, and when can I expect to get it back?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-009"
     ],
-    "reference_answer": "Submit a ticket in Jira under the ANALYTICS project with the label 'data-request', including your business question, required metrics, deadline, and intended use. The Analytics team will triage your request during Monday morning standup, and simple requests that take less than 4 hours will be committed the same day with a 2 business day SLA, while complex analyses typically take 5-10 business days."
+    "reference_answer": "Submit a ticket in Jira under the ANALYTICS project with the label data-request, including your business question, required metrics, deadline, and intended use. The analytics team will triage it during Monday morning standup, and simple requests that take less than 4 hours typically get committed the same day with a 2 business day SLA, while complex analysis takes 5-10 business days."
   },
   {
     "id": "q-g25",
-    "question": "I need to report a bug in ClaimsFlow and want to make sure it gets to the right team. Which Slack channel should I use?",
+    "question": "I have a question about my timesheet and payroll. Which Slack channel should I use to get help?",
     "category": "answerable",
     "user": "emp-001",
     "expected_route": "knowledge",
     "expected_docs": [
       "wiki-010"
     ],
-    "reference_answer": "You should post in #claimsflow-dev, which is used for ClaimsFlow development, bug reports, and deployment updates where Platform Engineering and Claims Ops collaborate. You can post error logs and testing results there for the team to review."
+    "reference_answer": "You should post your question in #timetrax-support, which handles TimeTrax scheduling issues, timesheet problems, and payroll questions. HR responds to questions in that channel within 4 hours during business days."
   },
   {
     "id": "q-g26",
@@ -418,6 +463,6 @@
     "expected_docs": [
       "wiki-011"
     ],
-    "reference_answer": "You should escalate to the secondary on-call engineer after 10 minutes without progress on P1 incidents. You can find the secondary on-call engineer listed in the PagerDuty rotation."
+    "reference_answer": "After 10 minutes without progress on P1 incidents, you should escalate to the secondary on-call engineer by checking the PagerDuty rotation for their contact information. If multiple systems are down, you should also contact the VP of Engineering (currently Sarah Chen) and page the secondary on-call."
   }
 ]

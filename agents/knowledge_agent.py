@@ -34,13 +34,14 @@ Rules:
    Politely decline anything else.
 7. Keep answers under 200 words, plain language.{extra_rules}"""
 
+
 def build_agent(employee: dict, checkpointer=None, extra_tools=None,
-                extra_rules: str = ""):
-    """employee: dict with employee_id, name, role, team, audience."""
-    tools = make_tools(employee["audience"], employee["employee_id"])
+                extra_rules: str = "", base_tools=None):
+    if base_tools is None:
+        base_tools = make_tools(employee["audience"], employee["employee_id"])
+    tools = list(base_tools)
     if extra_tools:
         tools = tools + list(extra_tools)
-    tool_map = {t.name: t for t in tools}
 
     llm = ChatBedrockConverse(model=HAIKU, region_name=REGION,
                               temperature=0.2, max_tokens=800)

@@ -7,6 +7,8 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from agents.knowledge_agent import build_agent
 from memory.profile import make_profile_tools
 from memory.episodic import make_episodic_tools, log_turn
+import os
+from agents.mcp_client import MCPClient
 
 ROOT = pathlib.Path(__file__).parent
 con = sqlite3.connect(ROOT / "data" / "meridian.db")
@@ -20,7 +22,6 @@ for eid, e in EMPLOYEES.items():
     print(f"  {eid}: {e['name']} ({e['role']}, audience={e['audience']})")
 uid = input("\nLogin as [emp-001]: ").strip() or "emp-001"
 emp = EMPLOYEES[uid]
-
 checkpointer = SqliteSaver(sqlite3.connect(ROOT / "data" / "checkpoints.db",
                                            check_same_thread=False))
 graph = build_agent(
@@ -37,6 +38,18 @@ graph = build_agent(
 thread = input(f"Thread id [{uid}-main]: ").strip() or f"{uid}-main"
 cfg = {"configurable": {"thread_id": thread}}
 print(f"Logged in as {emp['name']}, thread '{thread}'. 'quit' to exit.\n")
+
+mcp_client = MCPClient(
+    command=sys.executable,
+    args=[str(ROOT / "mcp_server" / "server.py")],
+    env={**os.environ, "MERIDIAN_EMPLOYEE_ID": emp["employee_id"]})
+
+graph = build_agent(
+    emp, checkpointer=checkpointer,
+    base_tools=mcp_client.langchain_tools(),
+    extra_tools=(make_profile_tools(emp["employee_id"])
+                 + make_episodic_tools(emp["employee_id"])),
+    extra_rules="""...same rules 8-10 as before...""")
 
 while True:
     q = input(f"{emp['name']}> ").strip()
